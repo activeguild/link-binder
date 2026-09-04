@@ -37,7 +37,9 @@ function render(): void {
   anchor.href = url.href;
   anchor.textContent = url.href;
   anchor.target = '_blank';
-  anchor.rel = 'noopener noreferrer';
+  // noreferrer を付けると referrerPolicy が無効化されるため noopener のみ
+  anchor.rel = 'noopener';
+  anchor.referrerPolicy = 'unsafe-url';
   linkArea.append(anchor);
 }
 
