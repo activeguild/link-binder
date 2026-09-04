@@ -1,0 +1,76 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, 'Hiragino Kaku Gothic ProN', sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: start center;
+  background: light-dark(#f6f7f9, #16181d);
+  color: light-dark(#1c1e21, #e8eaed);
+}
+
+.container {
+  width: min(560px, 90vw);
+  margin-top: 12vh;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.description {
+  color: light-dark(#5f6672, #9aa0a6);
+  margin-top: 0;
+}
+
+.field {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+#url-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid light-dark(#c9ced6, #3c4043);
+  border-radius: 8px;
+  background: light-dark(#ffffff, #202124);
+  color: inherit;
+}
+
+#url-input:focus {
+  outline: 2px solid #4c8dff;
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.error {
+  color: light-dark(#c2362f, #ff7b72);
+  font-size: 0.85rem;
+  margin: 0.6rem 0 0;
+}
+
+.link-area {
+  margin-top: 1.2rem;
+}
+
+.link-area a {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: #2f6fed;
+  font-weight: 500;
+}
